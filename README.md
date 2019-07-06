@@ -17,7 +17,13 @@
 
 ```
 1. Tentukan lokasi penyimpanan data user (ex. D:\User\)
-2. Lakukan perubahan lokasi pada file 'main.cpp' dan 'login.cpp'
+2. Lakukan perubahan lokasi pada file 'main.cpp' dan 'login.h'
+
+#### main.cpp
+![main.cpp](https://github.com/alfatttttttttt/ceplesples/blob/master/IMAGES/main.png)
+
+#### login.h
+![login.h](https://github.com/alfatttttttttt/ceplesples/blob/master/IMAGES/login.png)
 ```
 # Refrensi
 * https://gist.github.com/KashikiDraco/ddc9bf1ee11b6d668318
