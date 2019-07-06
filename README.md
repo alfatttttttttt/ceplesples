@@ -13,11 +13,9 @@
     - [ ] `Subnetworking`
 # `README`
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 # `How-To`
 
-```
 1. Tentukan lokasi penyimpanan data user (ex. D:\User\)
 2. Lakukan perubahan lokasi pada file 'main.cpp' dan 'login.h'
 
@@ -26,7 +24,7 @@
 
 #### login.h
 ![login.h](/IMAGES/login.png)
-```
+
 # Refrensi
 * https://gist.github.com/KashikiDraco/ddc9bf1ee11b6d668318
 * https://github.com/anuragbhd/code/blob/master/C%2B%2B/caesar-cipher.cpp
