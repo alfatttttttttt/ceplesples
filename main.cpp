@@ -2,6 +2,9 @@
 #include <fstream>
 #include <string>
 #include <windows.h>
+#include <sstream>
+#include <iomanip>
+#include <stdlib.h>
 #include "login.h"
 using namespace std;
 
@@ -17,7 +20,7 @@ int main()
   cout << "      .sNMs.`NMMMMmo.   .hy+omm       |  .--.  || .-. :|  ||  || .-. ||  | " << endl;
   cout << "     /MMMM.  .dNy-     :NMMMNs-       |  |  |  ||   --.|  ||  |' '-' '`--' " << endl;
   cout << "      dMMMh     .oyhyo- /hMMMMMd+`    `--'  `--' `----'`--'`--' `---' .--. " << endl;
-  cout << "      -MMMM/   yMMMMMMMy  `+dMMMMMy    versi 1.0 BETA                 '--' " << endl;
+  cout << "      -MMMM/   yMMMMMMMy  `+dMMMMMy    versi 1.0 UPDATE               '--' " << endl;
   cout << "     .-sMMMN` /MMMs-oMMM+    -sNMMs   " << endl;
   cout << "     mM-mMMMy -MMMdodMMM: ..   .Mm`   " << endl;
   cout << "     -Md:dyo:  :dMMMMMd: -MMMd`hM:    " << endl;
@@ -38,10 +41,25 @@ int main()
     cout << "   Password : "; cin >> password;
     cout << "   Email    : "; cin >> email;
     MessageBox(0,"Pendaftaran Berhasil!","DAFTAR",0);
+    string encrypHexa = "";
+        int keyItr = 0;
+        string key = "5";
+        stringstream res;
+        for (int i = 0; i < password.length(); i++){
+            int temp = password[i] ^ key[keyItr];
+
+            res << hex << setfill('0') << std::setw(2) << (int)temp;
+            keyItr++;
+            if (keyItr >= key.length()){
+                keyItr = 0;
+            }
+        }
+
+        res >> encrypHexa;
 
     ofstream file;
-    file.open("E:\\FP\\USER\\" + username + ".txt");
-    file << username << endl << password << endl << email;
+    file.open("C:\\" + username + ".txt");
+    file << username << endl << encrypHexa << endl << email;
     file.close();
     system("cls");
     main();
@@ -53,7 +71,7 @@ int main()
     if (!status)
     {
       MessageBox(0,"Login Gagal!","LOGIN",0);
-      system("PAUSE");
+      cout << "   "; system("PAUSE");
       return 0;
     }
     else
@@ -67,7 +85,7 @@ int main()
   else
   {
     cout << "   Pilihan anda salah!" << endl;
-    system("PAUSE");
+    cout << "   "; system("PAUSE");
   }
   cin.get();
   return 0;
