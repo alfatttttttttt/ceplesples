@@ -11,7 +11,6 @@
     - [ ] `XOR`
 - [ ] Jaringan
     - [ ] `Subnetworking`
-    - [ ] `(Masih Belum Tahu)`
 # `README`
 Pada source code `utama.cpp` akan memanggil beberapa executable yg sudah ter-compile. Seperti Daftar Tools pada Kriptografi dan Daftar Tools Jaringan, dengan harapan akan memudahkan pengguna.
 # `Compile Secara Manual`
