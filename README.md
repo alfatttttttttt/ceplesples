@@ -12,17 +12,16 @@
 - [ ] Jaringan
     - [ ] `Subnetworking`
 # `README`
-Pada source code `utama.cpp` akan memanggil beberapa executable yg sudah ter-compile. Seperti Daftar Tools pada Kriptografi dan Daftar Tools Jaringan, dengan harapan akan memudahkan pengguna.
-# `Compile Secara Manual`
+
+# `How-To`
 
 ```
-g++ utama.cpp -o utama
-g++ chiper.cpp -o chiper
-g++ xor.cpp -o xor
-g++ listjaringan.cpp -o listjaringan
-g++ listkriptografi.cpp -o listkriptografi
+1. Tentukan lokasi penyimpanan data user (ex. D:\User\)
+2. Lakukan perubahan lokasi pada file 'main.cpp' dan 'login.cpp'
 ```
 # Refrensi
+* https://gist.github.com/KashikiDraco/ddc9bf1ee11b6d668318
 * https://github.com/anuragbhd/code/blob/master/C%2B%2B/caesar-cipher.cpp
 * https://tutorialspoint4all.com/caesar-cipher-encryption-decryption-in-c-and-c/
 * https://www.dreamincode.net/forums/topic/67358-xor-encryptiondecryption/
+* https://www.youtube.com/watch?v=I_aWPGCaaFA&feature=youtu.be
