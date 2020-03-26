@@ -29,7 +29,7 @@ Disini kami membuat sebuah Tools yang dimana fungsi utamanya yakni ingin memudah
 ```
 g++ -o main main.cpp
 ```
-# Refrensi
+# Referensi
 * https://gist.github.com/KashikiDraco/ddc9bf1ee11b6d668318
 * https://github.com/anuragbhd/code/blob/master/C%2B%2B/caesar-cipher.cpp
 * https://tutorialspoint4all.com/caesar-cipher-encryption-decryption-in-c-and-c/
